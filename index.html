@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rahul</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0b9ee9b2b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-sharp {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+    </style>
+    <script>
+        function ValidateEmail(Email) {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (inputText.value.match(mailformat)) {
+                return (true)
+            }
+            alert("You have entered an invalid email address!")
+            return (false)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="s1"></div>
+        <div class="shape"></div>
+        <div class="s2"></div>
+        <div id="floatpage">
+            <div id="content-container">
+                <div class="home-page">
+                    <nav>
+                        <!-- <a href="index.html"><img src="logo1.jpeg" class="logo"></a> -->
+                        <a href="index.html">
+                            <div class="word-logo">
+                                <!-- <h1>R<span>AHUL</span></h1> -->
+                                <img src="icon.png">
+                            </div>
+                        </a>
+
+                        <ul id="sidemenu">
+                            <li><a href="#content-container">Home</a></li>
+                            <li><a href="#about-container">About</a></li>
+                            <li><a href="#project-container">Projects</a></li>
+                            <li><a href="#contact-container">Contact us</a></li>
+                            <i class="fas fa-times" onclick="closemenu()"></i>
+                            <!-- <img src="sun.png" id="icons"> -->
+                        </ul>
+                        <i class="fas fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="row">
+
+                        <div class="home-content">
+                            <p>Hello I'm</p>
+                            <h1>Rahul Maurya</h1>
+                            <p>I'm</p>
+                            <ul class="dynamic-intro">
+                                <li><span>IT Graduate</span></li>
+                                <li><span>Web Developer</span></li>
+                            </ul>
+                        </div>
+                        <div class="cube-container">
+                            <div class="cube">
+                                <div class="top"></div>
+                                <div>
+                                    <span style="--i:0;"></span>
+                                    <span style="--i:1;"></span>
+                                    <span style="--i:2;"></span>
+                                    <span style="--i:3;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-container">
+                <div class="about-page">
+                    <h1 class="subtitle">About me</h1>
+                    <div class="row">
+                        <div class="about-left">
+                            <div class="info-container">
+                                <img src="profile-picture1.jpeg">
+                                    <h1>SAP Developer</h1>
+                                <p>I am Rahul Maurya. Learner Initiator Mentor. I live in Mumbai and I enjoy coding and
+                                    solving problems. I have worked on different subjects and projects. I have started my journey 
+                                back in 2022 as a front-end web developer. I am working as a full time Associate Analyst in
+                            Deloitte India Consulting. Practicing SAP ABAP from October 2022.</p>
+                            </div>
+                        </div>
+                        <div class="about-right">
+                            <div class="info-container">
+                                <div class="tab-title">
+                                    <p class="tab-links1 active-link1" onclick="opentab1('skills')">Skills</p>
+                                    <p class="tab-links1" onclick="opentab1('experiance')">Experience</p>
+                                </div>
+                                <div class="tab-content1 active-tab1" id="skills">
+                                    <div class="skill-list">
+                                        <div class="title">
+                                            <p>HTML/CSS</p>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="html">
+                                                <div class="bar-ball"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="title">
+                                            <p>SAP(ABAP)</p>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="sap">
+                                                <div class="bar-ball"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="title">
+                                            <p>Java</p>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="java">
+                                                <div class="bar-ball"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="title">
+                                            <p>Python</p>
+                                            <span>75%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="python">
+                                                <div class="bar-ball"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="title">
+                                            <p>SQL</p>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="sql">
+                                                <div class="bar-ball"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-list">
+                                        <div class="title">
+                                            <p>Data Structure</p>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="data-structure">
+                                                <div class="bar-ball"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content1" id="experiance">
+                                    <ul>
+                                        <li><span>Jun 2021 - Aug 2021</span><br>
+                                            <p>Digital Marketing and Cold Calling</p>
+                                            <h1>SuccessR HR Pvt Ltd</h1>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><span>Oct 2022 - Present</span><br>
+                                            <p>Associate Analyst</p>
+                                            <h1>Deloitte India Consulting Pvt Ltd(USI)</h1>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="project-container">
+                <div class="project-page">
+                    <h1 class="subtitle">My Projects</h1>
+                    <div class="tab-title">
+                        <p class="tab-links2 active-link2" onclick="opentab2('project')">Projects</p>
+                        <p class="tab-links2" onclick="opentab2('research')">Researchs</p>
+                        <p class="tab-links2" onclick="opentab2('certificate')">Certificates</p>
+                    </div>
+                    <div class="tab-content2 active-tab2" id="project">
+                        <div class="project-list">
+                            <div>
+                                <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3"></i>
+                                <h2>Ecommerce Website</h2>
+                                <p>HTML/CSS</p>
+                                <p>College Project</p>
+                                <p class="date"><b>OCT 2019</b></p>
+                                <!-- <a href="#">View</a> -->
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-python"></i>
+                                <h2>Media Player</h2>
+                                <p>Python</p>
+                                <p>College Project</p>
+                                <p class="date"><b>SEP 2020</b></p>
+                                <!-- <a href="#">View</a> -->
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-java"></i>
+                                <h2>Chatting Application</h2>
+                                <p>Java</p>
+                                <p>College Project</p>
+                                <p class="date"><b>NOV 2020 - FEB 2021</b></p>
+                                <!-- <a href="#">View</a> -->
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-c"></i><i class="fa-solid fa-hashtag"></i>
+                                <h2>Pharmacy Managment System</h2>
+                                <p>C Sharp/SQL Server</p>
+                                <p>College Project</p>
+                                <p class="date"><b>JUL 2021 - SEP 2021</b></p>
+                                <!-- <a href="#">View</a> -->
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-java"></i>
+                                <h2>Blood Bank Managment System</h2>
+                                <p>Java/MySql</p>
+                                <p>College Project</p>
+                                <p class="date"><b>AUG 2021 - SEP 2021</b></p>
+                                <!-- <a href="#">View</a> -->
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-java"></i>
+                                <h2>Railway Tracking and Arrival Time Prediction Prediction</h2>
+                                <p>Java/MySql</p>
+                                <p>College Project</p>
+                                <p class="date"><b>AUG 2021 - FEB 2022</b></p>
+                                <!-- <a href="#">View</a> -->
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-python"></i>
+                                <h2>Student Performance Predicition</h2>
+                                <p>Python Machine Learning</p>
+                                <p>Research Project</p>
+                                <p class="date"><b>JAN 2022 - MARCH 2022</b></p>
+                                <a href="https://rm9833-student-predicition-app-edxg3q.streamlitapp.com/">View</a>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-python"></i>
+                                <h2>Personality Predicition</h2>
+                                <p>Python Machine Learning</p>
+                                <p>Research Project</p>
+                                <p class="date"><b>JUN 2022 - JUL 2022</b></p>
+                                <a href="https://manish1986451-personality-prediction-app-w3lz64.streamlitapp.com/">View</a>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-python"></i><i class='bx bxl-django'></i>
+                                <h2>Django Business Website (For Client)</h2>
+                                <p>Python Django</p>
+                                <p>Research Project</p>
+                                <p class="date"><b>JUL 2022</b></p>
+                                <a href="http://rtatp.pythonanywhere.com/">View</a>
+                            </div>
+                            <div>
+                                <img class="projlogo" src="Logo/Avangrid.png">
+                                <h2>Avangrid</h2>
+                                <p>SAP ISU Exception/Billing</p>
+                                <p>Deloitte India Consulting(USI)</p>
+                                <p class="date"><b>NOV 2022 - MAR 2023</b></p>
+                            </div>
+                            <div>
+                                <img class="projlogo" src="Logo/Tory-Burch.png">
+                                <h2>Tory Burch</h2>
+                                <p>SAP ABAP Developer/Project Managment Officer</p>
+                                <p>Deloitte India Consulting(USI)</p>
+                                <p class="date"><b>MAY 2023 - Jan 2024</b></p>
+                            </div>
+                            <div>
+                                <img class="projlogo" src="Logo/hpe logo.png">
+                                <h2>Hewlett Packard Enterprise (HPE)</h2>
+                                <p>SAP ABAP </p>
+                                <p>Deloitte India Consulting(USI)</p>
+                                <p class="date"><b>JAN 2024 - Dec 2024</b></p>
+                            </div>
+
+                        </div>
+                        <div id="project-loader">See More</div>
+                    </div>
+                    <div class="tab-content2" id="research">
+                        <div class="research-list">
+
+                            <div>
+                                <i class="fa-brands fa-python"></i>
+                                <h2>Student Performance Predicition</h2>
+                                <p>Python-Machine Learning</p>
+                                <a
+                                    href="https://www.irjmets.com/uploadedfiles/paper//issue_7_july_2022/28345/final/fin_irjmets1658087336.pdf">View</a>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-python"></i>
+                                <h2>Personality Predicition</h2>
+                                <p>Python-Machine Learning</p>
+                                <a
+                                    href="https://www.irjmets.com/uploadedfiles/paper//issue_8_august_2022/29110/final/fin_irjmets1659778935.pdf">View</a>
+                            </div>
+
+                        </div>
+                        <!-- <div id="research-loader">See More</div>   -->
+                        <!-- Enable JavaScript also -->
+                    </div>
+                    <div class="tab-content2" id="certificate">
+                        <div class="certificate-list">
+                            <div>
+                                <img src="certificate/Digital Marketing North strom Academy.JPG">
+                                <h2>Digital Marketing</h2>
+                                <p>North Strom Academy</p>
+                                <p class="date"><b>MAY 2020</b></p>
+                                <a
+                                    href="https://drive.google.com/file/d/19akfI-Xml-7h-GnIvXeDeKI79zrWETIJ/view?usp=sharing">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/Technical support fundamental.png">
+                                <h2>Technical Support Fundamental</h2>
+                                <p>Coursera</p>
+                                <p class="date"><b>JUN 2020</b></p>
+                                <a href="https://coursera.org/share/ff8467c931ad557793c18108ef0685d9">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/Programming for everybody(Getting Started with Python).png">
+                                <h2>Programming for everybody (Getting Started with Python)</h2>
+                                <p>Coursera</p>
+                                <p class="date"><b>JAN 2020</b></p>
+                                <a href="#">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/Ethical Hacker.png">
+                                <h2>Ethical Hacking</h2>
+                                <p>Internshala</p>
+                                <p class="date"><b>MAY 2021</b></p>
+                                <a href="https://trainings.internshala.com/s/v/141478/55b60b6c">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/Google seo fundamental.jpg">
+                                <h2>Google SEO Fundamental</h2>
+                                <p>Internshala</p>
+                                <p class="date"><b>MAY 2021</b></p>
+                                <a href="https://coursera.org/share/5708f230d171d66bc93923e80fca4ba2">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/Data Science.png">
+                                <h2>Data Science</h2>
+                                <p>Python-Machine Learning</p>
+                                <p class="date"><b>OCT 2021</b></p>
+                                <a href="https://trainings.internshala.com/s/v/155330/fa93a294">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/SAP ABAP on HANA + HANA Modelling.jpeg">
+                                <h2>SAP ABAP on HANA + HANA Modelling</h2>
+                                <p>Udemy</p>
+                                <p class="date"><b>Apr 2023</b></p>
+                                <a href="https://www.udemy.com/certificate/UC-96e5c457-25c0-4fc0-89ca-aae5034fe8dd/">View</a>
+                            </div>
+                            <div>
+                                <img src="certificate/Microsoft Excel - Advanced excel formulas and function.jpg">
+                                <h2>Microsoft Excel - Advanced excel formulas and function</h2>
+                                <p>Udemy</p>
+                                <p class="date"><b>Apr 2023</b></p>
+                                <a href="https://www.udemy.com/certificate/UC-1250481c-bc8c-401a-904d-c2b8a3270b59/">View</a>
+                            </div>
+                            
+                            
+
+                        </div>
+                        <div class="popup">
+                            <span>&times;</span>
+                            <img src="certificate/Digital Marketing North strom Academy.JPG">
+                        </div>
+                        <div id="certificate-loader">See More</div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="contact-container">
+                <div class="contact-page">
+                    <div class="row">
+                        <div class="contact-left">
+                            <div class="sub-title">
+                                <h1>Contact me</h1>
+                                <p><i class="fa-solid fa-paper-plane"></i>rahulmaurya9859@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i>+91 87790 59939</p>
+                            </div>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/RM9833/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://twitter.com/rm8655364117"><i
+                                        class="fa-brands fa-twitter-square"></i></a>
+                                <a href="https://www.instagram.com/rahul.maurya.19/"><i
+                                        class="fa-brands fa-instagram-square"></i></a>
+                                <a href="https://www.linkedin.com/in/rahul-maurya-9864891b0/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1zxlEUsjRVTRmvqszJRVXvzCdXgTO6udW/view?usp=sharing" class="btn btn2">Resume</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Mesaage" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2" onclick="ValidateEmail()">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright &copy; Rahul. Made By Rahul Maurya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" \
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" \
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <!-- block inspect -->
+
+    <!--<script language="JavaScript">
+        $(document).bind("contextmenu", function (e) {
+            e.preventDefault();
+        });
+        $(document).keydown(function (e) {
+            if (e.ctrlKey && (e.which === 83)) {
+                e.preventDefault();
+                return false;
+            }
+        });
+    </script> -->
+
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+    <!-- Force scroll to top -->
+    <script>
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+    </script>
+
+
+
+    <script>
+        const a = window.matchMedia("(prefers-color-scheme: dark)");
+        var icon = document.getElementById("icons");
+        if (a.matches == true) {
+            icon.src = "sun.png";
+        }
+        else {
+            icon.src = "moon.png";
+        }
+
+    </script>
+    <!-- Mode Script -->
+    <!-- <script>
+
+        var icons = document.getElementById("icons");
+
+        icons.onclick = function () {
+            if (icons.src = "moon.png") {
+                document.body.classList.toggle("light-theme");
+                icons.src = "sun.png"
+            }
+            else if(icons.src = "sun.png"){
+                document.body.classList.toggle("dark-theme");
+                icons.src="moon.png";
+            }
+        }
+
+
+    </script> -->
+
+    <!-- About Tab Script -->
+    <script>
+
+        var tablinks1 = document.getElementsByClassName("tab-links1");
+        var tabcontents1 = document.getElementsByClassName("tab-content1");
+
+        function opentab1(tabname1) {
+            for (tablink1 of tablinks1) {
+                tablink1.classList.remove("active-link1");
+            }
+            for (tabcontent1 of tabcontents1) {
+                tabcontent1.classList.remove("active-tab1");
+            }
+            event.currentTarget.classList.add("active-link1");
+            document.getElementById(tabname1).classList.add("active-tab1");
+        }
+
+
+    </script>
+
+    <!-- Portfolio Tab Script -->
+    <script>
+        var tablinks2 = document.getElementsByClassName("tab-links2");
+        var tabcontents2 = document.getElementsByClassName("tab-content2");
+
+        function opentab2(tabname2) {
+            for (tablink2 of tablinks2) {
+
+                tablink2.classList.remove("active-link2");
+
+            }
+            for (tabcontent2 of tabcontents2) {
+
+                tabcontent2.classList.remove("active-tab2");
+            }
+            event.currentTarget.classList.add("active-link2");
+            document.getElementById(tabname2).classList.add("active-tab2");
+
+        }
+
+
+    </script>
+
+    <!-- Portfolio load more btn  for project list-->
+    <script>
+
+        let loadMoreBtn = document.querySelector('#project-loader');
+        let currentItem = 3;
+
+        loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.project-page .tab-content2 .project-list div')];
+            for (var i = currentItem; i < currentItem + 3; i++) {
+                boxes[i].style.display = 'inline-block';
+                currentItem += 3;
+
+                if (currentItem >= boxes.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Portfolio load more btn  for Research list-->
+    <!-- <script>
+        let loadMoreBtn1 = document.querySelector('#research-loader');
+        let currentItem1 = 3;
+
+        loadMoreBtn1.onclick = () => {
+            let boxes = [...document.querySelectorAll('.project-page .tab-content2 .research-list div')];
+            for (var i = currentItem1; i < currentItem1 + 3; i++) {
+                boxes[i].style.display = 'inline-block';
+                currentItem1 += 3;
+
+                if (currentItem1 >= boxes.length) {
+                    loadMoreBtn1.style.display = 'none';
+                }
+            }
+
+        }
+    </script> -->
+
+    <!-- Portfolio load more btn  for Certificate list-->
+    <script>
+        let loadMoreBtn2 = document.querySelector('#certificate-loader');
+        let currentItem2 = 3;
+
+        loadMoreBtn2.onclick = () => {
+            let boxes = [...document.querySelectorAll('.project-page .tab-content2 .certificate-list div')];
+            for (var i = currentItem2; i < currentItem2 + 3; i++) {
+                boxes[i].style.display = 'inline-block';
+                currentItem2 += 3;
+
+                if (currentItem2 >= boxes.length) {
+                    loadMoreBtn2.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+    <!-- Pop up image -->
+    <script>
+        document.querySelectorAll('.project-page .tab-content2 .certificate-list div img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.project-page .tab-content2 .popup').style.display = 'block';
+                document.querySelector('.project-page .tab-content2 .popup img').src = image.getAttribute('src');
+
+            }
+            document.querySelector('.project-page .tab-content2 .popup span').onclick = () => {
+                document.querySelector('.project-page .tab-content2 .popup').style.display = 'none';
+            }
+        })
+    </script>
+
+    <!-- Side Menu -->
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-50%";
+        }
+
+    </script>
+
+    <!-- Form script -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDOx6ld6i7KqQ16xNro7ZquwdHoErjTNrItkwnunfeOm7Hkm-LtuFUvzwasQqcEA6N/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

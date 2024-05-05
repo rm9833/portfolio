@@ -1,0 +1,607 @@
+@media screen and (max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+
+    .container .s1 {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        top: -50px;
+        left: -50px;
+    }
+
+    @keyframes s1circle {
+
+        0% {
+            width: 10px;
+            height: 10px;
+            top: 900px;
+            left: 1500px;
+            opacity: 0.1;
+
+        }
+
+        50% {
+            width: 95px;
+            height: 95px;
+            top: 100px;
+            left: 200px;
+            opacity: 0.3;
+        }
+
+        100% {
+            width: 300px;
+            height: 300px;
+            top: -50px;
+            left: -50px;
+            opacity: 0.5;
+        }
+    }
+
+
+    .container .shape {
+
+        transform: rotate(945deg);
+        width: 328px;
+        height: 384px;
+        left: 200px;
+        top: 20px;
+
+    }
+
+    @keyframes shapert {
+        0% {
+            width: 0px;
+            height: 0px;
+            top: 1100px;
+            right: 1200px;
+            transform: rotate(90deg);
+            border-radius: 0%;
+            opacity: 0.1;
+        }
+
+        10% {
+            width: 50px;
+            height: 50px;
+            transform: rotate(90deg);
+        }
+
+        20% {
+            transform: rotate(180deg);
+        }
+
+        30% {
+            transform: rotate(270deg);
+        }
+
+        40% {
+            width: 150px;
+            height: 150px;
+            transform: rotate(360deg);
+        }
+
+        50% {
+            transform: rotate(450deg);
+        }
+
+        60% {
+            width: 250px;
+            height: 250px;
+            transform: rotate(540deg);
+        }
+
+        70% {
+            transform: rotate(630deg);
+        }
+
+        80% {
+            transform: rotate(720deg);
+        }
+
+        90% {
+            transform: rotate(810deg);
+        }
+
+        95% {
+            transform: rotate(900deg);
+        }
+
+        100% {
+            transform: rotate(9458deg);
+
+
+        }
+    }
+
+    .container .s2 {
+        width: 300px;
+        height: 300px;
+        top: 48px;
+        left: 628px;
+    }
+
+    @keyframes s2circle {
+
+        0% {
+            width: 5px;
+            height: 5px;
+            top: -200px;
+            left: -200px;
+            opacity: 0.1;
+        }
+
+        40% {
+            width: 100px;
+            height: 100px;
+            top: 20px;
+            left: 150px;
+            opacity: 0.3;
+        }
+
+        100% {
+            width: 300px;
+            height: 300px;
+            top: 48px;
+            left: 628px;
+            opacity: 0.5;
+        }
+
+
+    }
+
+    .container #floatpage #content-container .home-page .row {
+        flex-wrap: wrap;
+    }
+
+    .container #floatpage #content-container .home-page .home-content {
+        margin-top: 35%;
+        font-size: 20px;
+    }
+
+    .container #floatpage #content-container .home-page .home-content h1 {
+        font-size: 40px;
+    }
+
+
+    .container #floatpage #content-container .home-page .home-content .dynamic-intro {
+
+        left: 51px;
+        bottom: 33px;
+        line-height: 45px;
+        height: 36px;
+        width: 147px;
+    }
+
+    .container #floatpage #content-container .home-page .home-content .dynamic-intro li {
+        font-size: 20px;
+
+    }
+
+    .container #floatpage #content-container .home-page .home-content .dynamic-intro li span::after {
+        bottom: 10px;
+
+    }
+
+    @keyframes slide {
+        100% {
+            top: -90px;
+        }
+
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul #icons {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 50px;
+        top: 25px;
+    }
+
+    nav ul {
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        text-align: left;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a {
+        font-weight: bolder;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .container #floatpage #content-container .home-page .cube-container {
+        flex-basis: 50%;
+        margin-top: 25%;
+    }
+
+    .container #floatpage #content-container .home-page .cube-container .cube {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container #floatpage #content-container .home-page .cube-container .cube div span {
+        transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+        /*width/2(100/2=50)*/
+    }
+
+    .top {
+        width: 200px;
+        height: 200px;
+        transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .top::before {
+        width: 200px;
+        height: 200px;
+        transform: translateZ(-300px);
+    }
+
+    /*-----------------About---------------------*/
+
+    #floatpage #about-container .about-page .row .about-left {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    #floatpage #about-container .about-page .row .about-left .info-container h1 {
+        font-size: 20px;
+    }
+
+    #floatpage #about-container .about-page .row .about-right {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .about-right .info-container .tab-content .skill-list .progress-bar {
+        width: 65vw;
+    }
+
+
+    /*-----------------Project-------------------*/
+    .project-page .tab-title .tab-links {
+        margin-right: 10%;
+        font-size: 16px;
+
+    }
+
+    .project-page .tab-content2 .popup img {
+        width: 80%;
+    }
+
+    .project-page .tab-content2 .popup span {
+        right: 50px;
+    }
+
+    /*----------------Contact-------------------*/
+
+    #floatpage #contact-container .contact-page .row .contact-left {
+        justify-content: center;
+        flex-basis: 100%;
+
+    }
+
+    #floatpage #contact-container .contact-page .row .contact-right {
+        flex-basis: 100%;
+
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        flex-direction: column;
+    }
+
+
+    .container .s1 {
+        width: 220px;
+        height: 220px;
+        background-color: red;
+        top: -40px;
+        left: -40px;
+    }
+
+    @keyframes s1circle {
+
+        0% {
+            width: 10px;
+            height: 10px;
+            top: 900px;
+            left: 1500px;
+            opacity: 0.1;
+
+        }
+
+        50% {
+            width: 95px;
+            height: 95px;
+            top: 100px;
+            left: 200px;
+            opacity: 0.3;
+        }
+
+        100% {
+            width: 220px;
+            height: 220px;
+            top: -40px;
+            left: -40px;
+            opacity: 0.5;
+        }
+    }
+
+
+    .container .shape {
+
+        transform: rotate(945deg);
+        width: 328px;
+        height: 284px;
+        left: 43px;
+        top: 105px;
+
+    }
+
+    @keyframes shapert {
+        0% {
+            width: 0px;
+            height: 0px;
+            top: 1100px;
+            right: 1200px;
+            transform: rotate(90deg);
+            border-radius: 0%;
+            opacity: 0.1;
+        }
+
+        10% {
+            width: 50px;
+            height: 50px;
+            transform: rotate(90deg);
+        }
+
+        20% {
+            transform: rotate(180deg);
+        }
+
+        30% {
+            transform: rotate(270deg);
+        }
+
+        40% {
+            width: 150px;
+            height: 150px;
+            transform: rotate(360deg);
+        }
+
+        50% {
+            transform: rotate(450deg);
+        }
+
+        60% {
+            width: 250px;
+            height: 250px;
+            transform: rotate(540deg);
+        }
+
+        70% {
+            transform: rotate(630deg);
+        }
+
+        80% {
+            transform: rotate(720deg);
+        }
+
+        90% {
+            transform: rotate(810deg);
+        }
+
+        95% {
+            transform: rotate(900deg);
+        }
+
+        100% {
+            transform: rotate(9458deg);
+
+
+        }
+    }
+
+    .container .s2 {
+        width: 220px;
+        height: 220px;
+        top: 206px;
+        left: 240px;
+    }
+
+    @keyframes s2circle {
+
+        0% {
+            width: 5px;
+            height: 5px;
+            top: -200px;
+            left: -200px;
+            opacity: 0.1;
+        }
+
+        40% {
+            width: 100px;
+            height: 100px;
+            top: 200px;
+            left: 150px;
+            opacity: 0.3;
+        }
+
+        100% {
+            width: 220px;
+            height: 220px;
+            top: 206px;
+            left: 240px;
+            opacity: 0.5;
+        }
+
+
+    }
+
+    .container #floatpage #content-container .home-page .row {
+        flex-wrap: wrap-reverse;
+    }
+
+    .container #floatpage #content-container .home-page .home-content {
+        margin-top: 35%;
+        font-size: 20px;
+    }
+
+    .container #floatpage #content-container .home-page .home-content h1 {
+        font-size: 40px;
+    }
+
+
+    .container #floatpage #content-container .home-page .home-content .dynamic-intro {
+
+        left: 51px;
+        bottom: 33px;
+        line-height: 45px;
+        height: 36px;
+        width: 147px;
+    }
+
+    .container #floatpage #content-container .home-page .home-content .dynamic-intro li {
+        font-size: 20px;
+
+    }
+
+    .container #floatpage #content-container .home-page .home-content .dynamic-intro li span::after {
+        bottom: 10px;
+
+    }
+
+    @keyframes slide {
+        100% {
+            top: -90px;
+        }
+
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background-color: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .container #floatpage #content-container .home-page .cube-container {
+        flex-basis: 100%;
+        margin-top: 35%;
+    }
+
+    .container #floatpage #content-container .home-page .cube-container .cube {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container #floatpage #content-container .home-page .cube-container .cube div span {
+        transform: rotateY(calc(90deg * var(--i))) translateZ(75px);
+        /*width/2(100/2=50)*/
+    }
+
+    .top {
+        width: 150px;
+        height: 150px;
+        transform: rotateX(90deg) translateZ(75px);
+    }
+
+    .top::before {
+        width: 150px;
+        height: 150px;
+        transform: translateZ(-200px);
+    }
+
+    /*-----------------About---------------------*/
+
+    #floatpage #about-container .about-page .row .about-left {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    #floatpage #about-container .about-page .row .about-right {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .about-right .info-container .tab-content .skill-list .progress-bar {
+        width: 65vw;
+    }
+
+
+    /*-----------------Project-------------------*/
+    .project-page .tab-title .tab-links {
+        margin-right: 10%;
+        font-size: 16px;
+
+    }
+
+    /*----------------Contact-------------------*/
+
+    #floatpage #contact-container .contact-page .row .contact-left {
+        justify-content: center;
+        flex-basis: 100%;
+
+    }
+
+    #floatpage #contact-container .contact-page .row .contact-right {
+        flex-basis: 100%;
+
+    }
+    
+    .copyright{
+        font-size: 15px;
+    }
+
+}
+
